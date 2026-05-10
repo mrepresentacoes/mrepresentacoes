@@ -9,14 +9,14 @@
 <style>
   :root {
     --steel: #8fa3b1;
-    --orange: #2A6DB5;
-    --orange-dark: #1a4f8a;
-    --dark: #0a0d12;
-    --dark2: #111620;
-    --dark3: #1a2030;
-    --text: #e8e8e8;
-    --muted: #778899;
-    --border: rgba(255,255,255,0.07);
+    --orange: #C9A84C;
+    --orange-dark: #a8873a;
+    --dark: #080c14;
+    --dark2: #0d1220;
+    --dark3: #121828;
+    --text: #f0ece0;
+    --muted: #8899aa;
+    --border: rgba(201,168,76,0.12);
   }
 
 - { margin: 0; padding: 0; box-sizing: border-box; }
@@ -24,7 +24,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-background: var(–dark);
+background: linear-gradient(160deg, #080c14 0%, #0b1028 50%, #080c14 100%);
 color: var(–text);
 font-family: ‘Barlow’, sans-serif;
 font-weight: 300;
@@ -40,7 +40,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 18px 40px;
-background: rgba(13,13,13,0.92);
+background: rgba(8,12,20,0.95);
 backdrop-filter: blur(12px);
 border-bottom: 1px solid var(–border);
 }
@@ -79,8 +79,8 @@ content: ‘’;
 position: absolute;
 inset: 0;
 background-image:
-linear-gradient(rgba(42,109,181,0.06) 1px, transparent 1px),
-linear-gradient(90deg, rgba(42,109,181,0.06) 1px, transparent 1px);
+linear-gradient(rgba(201,168,76,0.05) 1px, transparent 1px),
+linear-gradient(90deg, rgba(201,168,76,0.05) 1px, transparent 1px);
 background-size: 60px 60px;
 mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
 }
@@ -93,7 +93,7 @@ right: -200px;
 top: -100px;
 width: 700px;
 height: 700px;
-background: radial-gradient(ellipse, rgba(42,109,181,0.15) 0%, transparent 70%);
+background: radial-gradient(ellipse, rgba(201,168,76,0.12) 0%, transparent 70%);
 pointer-events: none;
 }
 
@@ -109,7 +109,7 @@ font-size: 11px;
 letter-spacing: 5px;
 text-transform: uppercase;
 color: var(–orange);
-border: 1px solid rgba(42,109,181,0.4);
+border: 1px solid rgba(201,168,76,0.4);
 padding: 6px 16px;
 border-radius: 2px;
 margin-bottom: 28px;
@@ -157,12 +157,12 @@ font-weight: 700;
 font-size: 16px;
 letter-spacing: 0.5px;
 transition: all 0.2s;
-box-shadow: 0 8px 30px rgba(42,109,181,0.35);
+box-shadow: 0 8px 30px rgba(201,168,76,0.35);
 }
 .btn-primary:hover {
 background: var(–orange-dark);
 transform: translateY(-2px);
-box-shadow: 0 12px 40px rgba(42,109,181,0.45);
+box-shadow: 0 12px 40px rgba(201,168,76,0.45);
 }
 
 .btn-secondary {
@@ -422,7 +422,7 @@ overflow: hidden;
 content: ‘’;
 position: absolute;
 inset: 0;
-background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(42,109,181,0.12) 0%, transparent 70%);
+background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(201,168,76,0.10) 0%, transparent 70%);
 }
 .cta-section h2 {
 font-family: ‘Bebas Neue’, sans-serif;
